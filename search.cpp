@@ -67,3 +67,13 @@ int main()
 
     return 0;
 }
+
+int linearSearch(auto data, auto key){
+	
+	int vec_size = data.size();
+	for(int counter1 = 0; counter1 <= (vec_size - 1); counter1++){
+		if(data[counter1] == key)
+			return counter1;		
+	}/*End for*/
+	return -1;
+}/*End linearSearch*/
